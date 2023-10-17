@@ -40,6 +40,9 @@ export default function Home() {
               <Image src={item.foto} alt='foto' className='foto' width={200} height={200}/>
               
             <p className='content'>{item.content}</p>
+            <div className='likes'>
+              
+            </div>
           </div>
         ))}
       </main>
