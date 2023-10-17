@@ -26,10 +26,11 @@ header > a, footer > a{
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.2s ease-in-out;
 }
 
-#home{
-  margin-right: auto;
+header > a:hover, footer > a:hover{
+  font-size: 1.2rem;
 }
 
 footer {
@@ -51,18 +52,20 @@ main{
   align-items: center;
   color: white;
   background-color: rgb(233, 233, 233);
-  margin: 0px 40px 0px 40px;
+  margin: 0px 140px 0px 140px;
   text-align: center;
 }
 
 .post{
   background-color: #1f1f1f;
   text-align: left;
-  width: 80%;
+  max-width: 900px;
   margin-top: 50px;
   color: white;
   border-radius: 10px;
   padding: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .id{
@@ -70,8 +73,9 @@ main{
 }
 
 .title{
+  font-size: 2.2rem;
   border-bottom: 1px solid var(--blue);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .content{
@@ -85,5 +89,48 @@ main{
 
 .infos{
   display: flex;
+
+}
+
+.foto{
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.556);
+  border-radius: 5px;
+}
+
+@media (max-width:900px) {
+  main{
+    margin: 0px 20px 0px 20px;
+    background-color: white;
+  }
+
+.post{
+  background-color: #1f1f1f;
+  text-align: left;
+  width: 100%;
+  margin: 0px 10px 0px 10px;
+  margin-top: 50px;
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+
+.title{
+  border-bottom: 1px solid var(--blue);
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.content{
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
+header > h1 {
+  font-size: 1.2rem;
+}
 
 }
