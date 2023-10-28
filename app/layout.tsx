@@ -14,7 +14,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body>{children}</body>
+      <body>
+        <header>
+           <a href="#" id='home'>Home</a>
+            <h1>DomPixelBlog</h1>
+            <a href="#">About</a>
+        </header>
+        {children}
+      </body>
     </html>
   )
 }
