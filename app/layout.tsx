@@ -18,7 +18,7 @@ export default function RootLayout({
         <header>
            <a href="#" id='home'>Home</a>
             <h1>DomPixelBlog</h1>
-            <a href="#">About</a>
+            <a href="#">Posts</a>
         </header>
         {children}
       </body>
